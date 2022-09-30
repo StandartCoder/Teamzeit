@@ -4,6 +4,12 @@
 	<title>Teamzeit</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:type" content="site">
+    <meta property="og:title" content="StandartCoder's Teamzeit">
+    <meta property="og:description" content="Hier siehst du die Teamzeit von StandartCoder auf PlayHills!">
+    <meta property="og:url" content="https://teamzeit.standartcoder.tk/">
+    <meta property="og:image" content="./images/icons/favicon.ico">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -23,6 +29,7 @@
 </head>
 <body>
 	
+	<!--class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1"-->
 	
 	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
 		<span></span>
@@ -36,23 +43,23 @@
 			</p>
 
 			<div class="flex-w flex-c cd100 p-b-82">
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 days" id="days">0</span>
+				<div class="flex-col-c-m size2 how-countdown float liquid">
+					<span class="l1-txt3 p-b-9 days ontop" id="days">0</span>
 					<span class="s1-txt1">Tage</span>
 				</div>
 
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 hours" id="hours">0</span>
+				<div class="flex-col-c-m size2 how-countdown float liquid2">
+					<span class="l1-txt3 p-b-9 hours ontop" id="hours">0</span>
 					<span class="s1-txt1">Stunden</span>
 				</div>
 
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 minutes" id="minutes">0</span>
+				<div class="flex-col-c-m size2 how-countdown float liquid3">
+					<span class="l1-txt3 p-b-9 minutes ontop" id="minutes">0</span>
 					<span class="s1-txt1">Minuten</span>
 				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 seconds" id="seconds">0</span>
+				
+				<div class="flex-col-c-m size2 how-countdown float liquid4">
+					<span class="l1-txt3 p-b-9 seconds ontop" id="seconds">0</span>
 					<span class="s1-txt1">Sekunden</span>
 				</div>
 			</div>
@@ -75,6 +82,7 @@
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 <!--===============================================================================================-->
     <script src="js/main.js"></script>
+	<script src="js/nice.js"></script>
 <!--===============================================================================================-->
 	<script >
 		$('.js-tilt').tilt({
